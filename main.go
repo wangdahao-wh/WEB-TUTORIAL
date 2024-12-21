@@ -8,6 +8,8 @@ import (
 )
 
 func main() {
+	http.RedirectHandler()
+	
 	http.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("helllo world"))
 	})
